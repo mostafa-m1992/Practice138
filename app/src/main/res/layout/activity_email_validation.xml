@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="views.EmailValidationActivity"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/imageView_back"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/ic_login_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/illustration"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="@string/textView_validation"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" />
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinView"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:inputType="number"
+                app:itemCount="5"
+                app:itemRadius="4dp"
+                app:itemSpacing="6dp"
+                app:itemWidth="36dp"
+                app:itemHeight="36dp"
+                app:lineColor="@color/colorPrimary"
+                app:lineWidth="2dp"
+                style="@style/PinWidget.PinView"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_register"
+        android:text="@string/button_register"
+        android:textSize="14sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/background_button"
+        android:layout_below="@id/card"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="views.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            app:srcCompat="@drawable/ic_baseline_search_24"
+            app:tint="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView_more"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24"
+            app:tint="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" >
+
+        <TextView
+            android:id="@+id/textView_delete"
+            android:text="@string/textView_delete"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/textView_cancel"
+            android:text="@string/textView_cancel"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_toStartOf="@id/textView_delete"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/textView_delete"
+            android:layout_marginRight="8dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

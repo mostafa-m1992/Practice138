@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Practice138</string>
+
+    <string name="textView_login">Login</string>
+    <string name="editText_email">Email</string>
+    <string name="editText_password">Password</string>
+    <string name="textView_email_err">Error Email</string>
+    <string name="textView_password_err">Password Should be at least 6 character</string>
+    <string name="textView_forgetPass">Forget Password?</string>
+    <string name="checkBox_remember">Remember Me</string>
+    <string name="button_singIn">Sign In</string>
+    <string name="textView_socialSignUp">Social SignUp</string>
+    <string name="textView_newUser">New User?</string>
+    <string name="textView_signUo">Sign Up</string>
+    <string name="toast_loginFailed">Username or password is wrong</string>
+    <string name="toast_errNet">Can not Connect to server</string>
+    <string name="textView_register">Register</string>
+    <string name="textView_haveAnAccount">Have An Account?</string>
+    <string name="textView_signIn">Sign In</string>
+    <string name="textView_validation">Validation</string>
+    <string name="button_register">Register</string>
+    <string name="toast_emailExists">Email Already Exists</string>
+    <string name="textView_forgetPassword">Forget Password</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_checkCode">Check Code</string>
+    <string name="button_goBack">Go back</string>
+    <string name="toast_emailNotExists">Email Not Exists</string>
+    <string name="toast_password_changed">Password Changed</string>
+    <string name="textView_fromCam">From Camera</string>
+    <string name="textView_fromGal">From Gallery</string>
+    <string name="textView_logout">Logout</string>
+    <string name="textView_deleteAcc">Delete Account</string>
+    <string name="toast_imageUp">Image Uploaded!</string>
+    <string name="textView_sure">Are You Sure?</string>
+    <string name="textView_cancel">Cancel</string>
+    <string name="toast_account_deleted">Account Deleted</string>
+    <string name="textView_noNet">No Internet</string>
+    <string name="textView_delete">Delete</string>
+
+</resources>
